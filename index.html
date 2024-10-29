@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touccan - Candidatos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar (Menu Lado Esquerdo) -->
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="./Logo Touccan.png" alt="Logo Touccan">
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-item">
+                    <a href="#"><i class="fas fa-home"></i>Página Inicial</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fas fa-search"></i>Pesquisar</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fas fa-bell"></i>Notificações</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fas fa-envelope"></i>Mensagens</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fas fa-history"></i>Histórico</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fas fa-wallet"></i> Carteira</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fas fa-cog"></i>Configurações</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção de Candidatos à direita -->
+        <div class="content">
+            <!-- Título e linha laranja -->
+            <div class="title">Candidatos</div>
+            <div class="title-line"></div>
+
+            <!-- Caixa de candidato com ícones de aceitar/recusar -->
+            <div class="candidate-box">
+                <a href="https://www.exemplo.com" target="_self">
+                    <img src="./Imagem - Perfil.png" alt="Foto de Perfil">
+                </a>
+                <div class="candidate-name">Maria Silva</div>
+                <div class="candidate-actions">
+                    <i class="fas fa-times" style="color: red;"></i>
+                    <i class="fas fa-check" style="color: green;"></i>
+                </div>
+            </div>
+
+            <!-- Caixa de candidato com status Negado -->
+            <div class="candidate-box">
+                <a href="https://www.exemplo.com" target="_self">
+                    <img src="./Imagem - Perfil.png" alt="Foto de Perfil">
+                </a>
+                <div class="candidate-name">Maria Silva</div>
+                <div class="candidate-status-negado">Negado</div>
+            </div>
+
+            <!-- Caixa de candidato com status Confirmado -->
+            <div class="candidate-box">
+                <a href="https://www.exemplo.com" target="_self">
+                    <img src="./Imagem - Perfil.png" alt="Foto de Perfil">
+                </a>
+                <div class="candidate-name">Maria Silva</div>
+                <div class="candidate-status-confirmado">Confirmado</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

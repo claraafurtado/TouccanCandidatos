@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #EBEBEB;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Menu lateral */
+.sidebar {
+    width: 220px;
+    background-color: #EBEBEB;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Linha divisória ao lado direito do menu */
+.sidebar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px; 
+    width: 1px;
+    height: 100%;
+    background-color: #929292; 
+}
+
+/* Logo Touccan */
+.sidebar-logo {
+    width: 150%;
+    margin-bottom: 30px; 
+    margin-left: -55px;
+}
+
+.sidebar-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -60px;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; 
+}
+
+.menu-item {
+    margin: 18px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item i {
+    margin-right: 12px; /* Espaço entre ícone e texto no menu */
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-item a:hover {
+    color: #F07B07;
+}
+
+.content {
+    margin-left: 20px; /* Espaço para o menu */
+    padding: 50px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as caixas verticalmente */
+}
+
+/* Título Candidatos */
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Linha laranja abaixo do título */
+.title-line {
+    width: 60px;
+    height: 4px;
+    background-color: #E97911;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.candidate-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limita a largura */
+    width: 100%; /* Garante que a caixa use toda a largura disponível até o máximo definido */
+}
+
+.candidate-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px; /* Espaço entre a imagem e o nome */
+}
+
+/* Nome do usuário */
+.candidate-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: auto; /* Garante que o nome esteja à esquerda */
+}
+
+/* Ícones de aceitar e negar */
+.candidate-actions {
+    display: flex;
+    align-items: center; 
+}
+
+.candidate-actions i {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 25px; /* Espaço entre os ícones */
+}
+
+.candidate-actions i:first-child {
+    margin-left: 0; /* Remove a margem do primeiro ícone */
+}
+
+/* Estilo do texto Negado em vermelho */
+.candidate-status-negado {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilo do texto Confirmado em verde */
+.candidate-status-confirmado {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
